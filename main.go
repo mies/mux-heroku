@@ -25,7 +25,7 @@ func router() *mux.Router {
 
 func main() {
 	handler := routerHandlerFunc(router())
-	err := http.ListenAndServe(":5000", handler)
+    err := http.ListenAndServe(":"+os.Getenv("PORT"), handler)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
