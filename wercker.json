@@ -1,4 +1,8 @@
 {
-    "preInstallScripts" : ["go install"]
+    "preInstallScripts" : [
+        "mkdir -p $HOME/go/src",
+        "export GOPATH=$HOME/go",
+        "go install"
+    ]
 }
 
