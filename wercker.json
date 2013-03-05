@@ -1,0 +1,4 @@
+{
+    "preInstallScripts" : ["go install"]
+}
+
