@@ -15,7 +15,7 @@ func routerHandlerFunc(router *mux.Router) http.HandlerFunc {
 }
 
 func index(res http.ResponseWriter, req *http.Request) {
-	io.WriteString(res, "Hello world")
+	io.WriteString(res, "Hello world!")
 }
 
 func router() *mux.Router {
